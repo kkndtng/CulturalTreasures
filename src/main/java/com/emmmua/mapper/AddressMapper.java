@@ -1,0 +1,35 @@
+package com.emmmua.mapper;
+
+import com.emmmua.entity.AddressEntity;
+import com.baomidou.mybatisplus.mapper.BaseMapper;
+import java.util.List;
+import com.baomidou.mybatisplus.mapper.Wrapper;
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import com.emmmua.entity.vo.AddressVO;
+import com.emmmua.entity.view.AddressView;
+
+
+/**
+ * 地址
+ * 
+ * @author 
+ * @email 
+ * @date 2021-03-03 15:13:59
+ */
+@Mapper
+public interface AddressMapper extends BaseMapper<AddressEntity> {
+	
+	List<AddressVO> selectListVO(@Param("ew") Wrapper<AddressEntity> wrapper);
+	
+	AddressVO selectVO(@Param("ew") Wrapper<AddressEntity> wrapper);
+	
+	List<AddressView> selectListView(@Param("ew") Wrapper<AddressEntity> wrapper);
+
+	List<AddressView> selectListView(Pagination page,@Param("ew") Wrapper<AddressEntity> wrapper);
+	
+	AddressView selectView(@Param("ew") Wrapper<AddressEntity> wrapper);
+	
+}
