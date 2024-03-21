@@ -33,9 +33,13 @@ public class AddressServiceImpl extends ServiceImpl<AddressMapper, AddressEntity
     
     @Override
 	public PageUtils queryPage(Map<String, Object> params, Wrapper<AddressEntity> wrapper) {
+		// 创建Page对象，传入参数params
 		  Page<AddressView> page =new Query<AddressView>(params).getPage();
+	        // 调用baseMapper的selectListView方法，获取满足条件的记录，并将结果赋值给page的records属性
 	        page.setRecords(baseMapper.selectListView(page,wrapper));
+	    	// 创建PageUtils对象，并将page对象赋值给PageUtils的page属性
 	    	PageUtils pageUtil = new PageUtils(page);
+	    	// 返回PageUtils对象
 	    	return pageUtil;
  	}
     
