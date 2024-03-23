@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="login-form" style="backgroundColor:rgba(255, 255, 255, 1);borderRadius:10px">
-        <h1 class="h1" style="color:rgba(131, 138, 182, 1);fontSize:28px;">非遗文化旅游景点后台注册</h1>
+        <h1 class="h1" style="color:rgba(131, 138, 182, 1);fontSize:28px;">非遗文化景点后台注册</h1>
         <el-form ref="rgsForm" class="rgs-form" :model="rgsForm" label-width="120px">
           <!-- <div v-if="tableName=='yonghu'" class="input-group">
 <div class="label">用户名</div>

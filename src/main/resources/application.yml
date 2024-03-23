@@ -9,9 +9,9 @@ server:
 spring:
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://192.168.136.100:3306/CulturalTreasures?useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+        url: jdbc:mysql://121.4.253.229:3307/CulturalTreasures?useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
         username: root
-        password: 123123
+        password: 1xtxXb6LXFjcscR0PFdkXPcH
     servlet:
       multipart:
         max-file-size: 10MB

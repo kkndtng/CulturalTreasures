@@ -6,7 +6,7 @@
       <div :class="2 == 1 ? 'left' : 2 == 2 ? 'left center' : 'left right'"
            style="backgroundColor: rgba(255, 255, 255, 0.71)">
         <el-form class="login-form" label-position="left" :label-width="1 == 3 ? '56px' : '0px'">
-          <div class="title-container"><h3 class="title" style="color: rgba(84, 88, 179, 1)">非遗文化旅游景点后台登录</h3></div>
+          <div class="title-container"><h3 class="title" style="color: rgba(84, 88, 179, 1)">非遗文化景点后台登录</h3></div>
           <el-form-item :label="1 == 3 ? '用户名' : ''" :class="'style'+1">
             <span v-if="1 != 3" class="svg-container" style="color:rgba(89, 97, 102, 1);line-height:44px"><svg-icon
                 icon-class="user"/></span>
